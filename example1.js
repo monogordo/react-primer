@@ -1,14 +1,15 @@
 class AppComponent extends React.Component {
 	render() {
-		return React.createElement(
-			"section",
-			{className: "site-wrap"},
-			React.createElement("h1", null, "Header"),
-			React.createElement("p", null, "blah"));
+		return (
+			<section className = 'site-wrap'>
+				<h1>header</h1>
+				<p>lorim...</p>
+			</section>
+		);
 	}
 }
 
 ReactDOM.render(
-	React.createElement(AppComponent, null),
+	<AppComponent  />,
 	document.getElementById("application")
 );
